@@ -5,6 +5,7 @@ class Animal:
     self.edad = edad
     self.habitat = habitat
     self.genero = genero
+    self.zona = []
     Animal.__totalAnimales += 1
   
   def getHabitat(self):
@@ -19,9 +20,14 @@ class Animal:
   def getEdad(self):
     return self.edad
   
-  """
-  @classmethod
-  def totalPorTipo(cls):
+  
+  @staticmethod
+  def totalPorTipo():
+    from .mamifero import Mamifero
+    from .ave import Ave
+    from .reptil import Reptil  
+    from .pez import Pez
+    from .anfibio import Anfibio
     nMamiferos = Mamifero.cantidadMamiferos()
     nAves = Ave.cantidadMamiferos()
     nReptiles = Reptil.cantidadReptiles()
@@ -29,7 +35,7 @@ class Animal:
     nAnfibios = Anfibio.cantidadAnfibios()
     mensaje = "Mamiferos: " + str(nMamiferos)+ "\nAves: " + str(nAves) + "\nReptiles: " + str(nReptiles)+ "\nPeces: " + str(nPeces)+ "\nAnfibios" + str(nAnfibios)
     return mensaje
-  """
+  
   
   def toString(self):
     if len(self.zona) == 0:

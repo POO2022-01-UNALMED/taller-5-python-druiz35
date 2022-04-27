@@ -1,8 +1,8 @@
 from .animal import Animal
 class Anfibio(Animal):
   __listado = []
-  __ranas = 0
-  __salamandras = 0
+  ranas = 0
+  salamandras = 0
   def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorPiel=None, venenoso=None):
     super().__init__(nombre, edad, habitat, genero)
     self.colorPiel = colorPiel
@@ -22,11 +22,11 @@ class Anfibio(Animal):
   @classmethod
   def crearRana(cls, nombre, edad, genero):
     rana = Anfibio(nombre, edad, "selva", genero, "rojo", True)
-    Anfibio.__ranas += 1
+    Anfibio.ranas += 1
     return rana
   
   @classmethod
   def crearSalamandra(cls, nombre, edad, genero):
     salamandra = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
-    Anfibio.__salamandras += 1
+    Anfibio.salamandras += 1
     return salamandra
