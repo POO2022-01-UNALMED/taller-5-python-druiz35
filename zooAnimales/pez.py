@@ -1,8 +1,8 @@
 from .animal import Animal
 class Pez(Animal):
   __listado = []
-  __bacalaos = 0
-  __salmones = 0
+  bacalaos = 0
+  salmones = 0
   def __init__(self, nombre=None, edad=None, habitat=None, genero=None, colorEscamas=None, cantidadAletas=None):
     super().__init__(nombre, edad, habitat, genero)
     self.colorEscamas = colorEscamas
@@ -22,11 +22,11 @@ class Pez(Animal):
   @classmethod
   def crearBacalao(cls, nombre, edad, genero):
     bacalao = Pez(nombre, edad, "oceano", genero, "rojo", 6)
-    Pez.__bacalaos += 1
+    Pez.bacalaos += 1
     return bacalao
   
   @classmethod
   def crearSalmon(cls, nombre, edad, genero):
     salmon = Pez(nombre, edad, "selva", genero, True, 4)
-    Pez.__salmones += 1
+    Pez.salmones += 1
     return salmon

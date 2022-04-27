@@ -29,7 +29,7 @@ class Animal:
     from .pez import Pez
     from .anfibio import Anfibio
     nMamiferos = Mamifero.cantidadMamiferos()
-    nAves = Ave.cantidadMamiferos()
+    nAves = Ave.cantidadAves()
     nReptiles = Reptil.cantidadReptiles()
     nPeces = Pez.cantidadPeces()
     nAnfibios = Anfibio.cantidadAnfibios()
