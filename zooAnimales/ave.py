@@ -1,4 +1,4 @@
-from animal import Animal
+from .animal import Animal
 class Ave(Animal):
   __listado = []
   __halcones = 0

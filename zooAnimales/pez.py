@@ -1,4 +1,4 @@
-from animal import Animal
+from .animal import Animal
 class Pez(Animal):
   __listado = []
   __bacalaos = 0
@@ -26,7 +26,7 @@ class Pez(Animal):
     return bacalao
   
   @classmethod
-  def crearLeon(cls, nombre, edad, genero):
-    leon = Pez(nombre, edad, "selva", genero, True, 4)
-    Pez.__leones += 1
-    return leon
+  def crearSalmon(cls, nombre, edad, genero):
+    salmon = Pez(nombre, edad, "selva", genero, True, 4)
+    Pez.__salmones += 1
+    return salmon
