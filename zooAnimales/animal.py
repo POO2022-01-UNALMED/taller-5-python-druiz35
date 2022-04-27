@@ -33,7 +33,7 @@ class Animal:
     nReptiles = Reptil.cantidadReptiles()
     nPeces = Pez.cantidadPeces()
     nAnfibios = Anfibio.cantidadAnfibios()
-    mensaje = "Mamiferos: " + str(nMamiferos)+ "\nAves: " + str(nAves) + "\nReptiles: " + str(nReptiles)+ "\nPeces: " + str(nPeces)+ "\nAnfibios" + str(nAnfibios)
+    mensaje = "Mamiferos: " + str(nMamiferos)+ "\nAves: " + str(nAves) + "\nReptiles: " + str(nReptiles)+ "\nPeces: " + str(nPeces)+ "\nAnfibios: " + str(nAnfibios)
     return mensaje
   
   
