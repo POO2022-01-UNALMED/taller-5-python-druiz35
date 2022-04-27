@@ -17,7 +17,7 @@ class Pez(Animal):
   
   @classmethod
   def cantidadPeces(cls):
-    return len(Pez.__listado)
+    return len(cls.__listado)
   
   @classmethod
   def crearBacalao(cls, nombre, edad, genero):
